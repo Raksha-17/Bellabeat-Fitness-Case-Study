@@ -63,3 +63,18 @@ To test the integrity of the data; the dataset is expected to be **ROCCC** which
  The process of data cleaning, transformation and visualization will be carried out in GoogleSheets and Pivot table and Charts.
 
 Data Cleaning and Transformation
+
+[1.pdf](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/files/12841948/1.pdf)
+An overview of the daily_activity_merged dataset
+
+[2.pdf](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/files/12841952/2.pdf)
+An overview of the SleepDay_merged dataset
+
+[3.pdf](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/files/12841953/3.pdf)
+An overview of the weight_loginfo dataset
+
+I converted the workbooks from csv files into Google Sheets workbooks in order not to lose part data while working in csv file.
+
+The date column of the Weight_Loginfo comprises of both date and time, so I used the power query to split column by the space delimiter, used the Text to columns function under the data tab to format the date into “ddmmyyyy” format and created named ranges for the column headers. I then used the TEXT function to extract the Days and Month in the date -
+
+
