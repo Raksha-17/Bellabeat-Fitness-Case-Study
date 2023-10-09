@@ -2,7 +2,7 @@
 Analyze smart device usage data in order to gain insight into how consumers use the non-Bellabeat smart devices which would subsequently, help influence Bellabeat marketing strategy.
 Course: [Google Data Analytics Capstone: Complete a Case Study](https://www.coursera.org/learn/google-data-analytics-capstone)
 ## Introduction
-In this case study, I will be working in the capacity of a junior data analyst to identify key business tasks following the six(6) data analysis procedures namely : Ask, Prepare, Process, Analyze, Share, Act. In order to answer the key business questions, I will follow the steps of the data analysis process: __[Ask](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/blob/main/README.md#ask), [Prepare](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/blob/main/README.md#prepare), [Process](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/blob/main/README.md#process), [Analyze](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/blob/main/README.md#analyze-and-share), [Share](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/blob/main/README.md#analyze-and-share), and [Act](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/blob/main/README.md#act)__.
+In this case study, I will be working in the capacity of a junior data analyst to identify key business tasks following the six(6) data analysis procedures namely : Ask, Prepare, Process, Analyze, Share, Act. In order to answer the key business questions, I will follow the steps of the data analysis process: __[Ask](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/blob/main/README.md#ask), [Prepare](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/blob/main/README.md#prepare), [Process](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/blob/main/README.md#process), [Analyze](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/blob/main/README.md#analyze), [Share](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/blob/main/README.md#share), and [Act](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/blob/main/README.md#act)__.
 
 ## Background
 ### BellaBeat Fitness 
@@ -112,3 +112,71 @@ The dataset after cleaning and transformation 1
 ![Screenshot 2023-10-09 8 52 18 AM](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/3dd0d5a8-0fbf-41f7-83a1-6073a9d1b717)
 The dataset after cleaning and transformation 2
 
+It is also important to note that only 24 users have their daily sleep records logged and this was determined using the formula- =UNIQUE(B2:B1000).
+
+Now, I have my dataset in 20 columns and 941 rows(including headers) for my dailyActivity dataset, with 11 columns and 411 rows(including headers) for the sleepDay dataset and the WeightLoginfo consists of 13 columns and 68 rows(including headers). This marks the completion of my data cleaning and transformation process. It is time to start my analysis to derive certain insights which leads us to the analyze phase.
+
+## analyze
+
+As mentioned earlier, all analysis process(using pivot tables), as well as visualization will be carried out in GoogleSheets.
+
+The dailyActivity table has logged info for a total of 33 users, the weightLoginfo has a total number of 8 users, while the sleepday table has a total number of 24 users.
+
+I created a pivot table to illustrate the average total steps of users across all days of the week, and visualized using a stacked column chart.
+
+
+![Screenshot 2023-10-09 9 12 01 AM](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/5fa3d264-1f3b-4532-b5c9-d726a19c00d0)
+Pivot table for average total steps by ID and Day.
+
+
+![Day_Wed, Day_Tue, Day_Thu, Day_Sun, Day_Sat… (2)](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/e8a1ac28-a8e2-4710-ae28-d3b63386e17b)
+
+
+Similarly, it can be deduced from the bar chart below that users take more steps Saturdays and Tuesday with least steps on Sundays and Thursdays.
+
+![AVERAGE of TotalSteps per Day (1)](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/c3f86741-8b77-4228-8eef-cd9930a271c4)
+
+
+![Avg of TotalMinutesAsleep and TotalTimeinBed](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/446ab1df-449e-4679-a1f0-b999fd65123c)
+
+I used the convert function to convert the TotalMinutesAsleep and TotalTimeInBed into hours.
+
+
+![AVERAGE of TotalHoursAsleep and AVERAGE of TotalHoursInBed](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/5e7bae1f-a18c-4550-8901-4d75a06f6550)
+
+
+We can see from the above diagram that the user spend an average of 7 hours or 419minutes on sleep and an average of 8hours or 456 minutes in bed. It also shows that users get more sleeptime on Sundays. Users get more sleep on Sundays.
+
+![AVERAGE Calories Burnt per Day](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/a9fe6f2b-6d1c-42ff-8823-1863ee487c22)
+
+Comparing the average total steps chart illustrated above with this average calories burnt chart, it can be established that the daily steps have a positive correlation with the calories burnt, that is, the higher the steps taken, the higher the calories burnt. More calories are burnt on Saturdays and Tuesdays while least calories are burned on Sundays and Thursdays.
+
+![Percentage of Minutes in Different Categories](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/ba245914-6056-4602-ab28-a55490efff38)
+
+Above is a pie chart which shows the percentage of time users spent in various activity category. Users spend 81% of their time Sedentarily. This can also be seen in the column chart below;
+
+![Total Minutes Category per User](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/ca192ad2-760d-4538-a186-c2459fd749d1)
+
+This brings us to the end of the analysis phase. Its is time to move on to the share phase where we pitch/share our insights and visuals (in an organized format) from the analysis carried out to the stakeholders.
+
+## share
+
+The share phase as stated above is all about sharing our findings to the primary / secondary stakeholders of the business. I have been able to deduce the following from the analysis I carried out;
+
+**Insights**
+
+* A total of 33 users provided their daily steps and calories over a period of 31 days each. About 88% of users were able to track their daily steps/calories burned for 25days and more while the remaining 12% did less than 25 days.
+  
+* 8 users provided their their daily weight report, out of which only 2 users were able to track their daily weight for 24–31 days while the remaining 6 users tracked for 5 days or less.
+ 
+* 24 users provided their daily sleep minutes and minutes in bed, out of which 42% was able to track their sleep data for 25–31 days while 58% only tracked their sleep for less than 25days.
+ 
+* The number of steps taken per day has a positive correlation with calories burned.
+  
+* Users take an average of 7,637 steps in a day while burning a total of 2,303 calories on the average.
+  
+* Users spend about 81% of their time in sedentary.
+  
+* Users tend to spend and average of 419 mins-which is approximately 7hours- on sleep, while they spend about 458 minutes-which is approximately 8hours in bed, while spending more time in bed and getting more sleep on Sundays.
+  
+*Users tend to take more steps on Saturdays and Tuesdays with least steps on Sundays and Thursdays.
