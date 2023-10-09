@@ -64,13 +64,13 @@ To test the integrity of the data; the dataset is expected to be **ROCCC** which
 
 Data Cleaning and Transformation
 
-[1.pdf](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/files/12841948/1.pdf)
+![1_page-0001](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/de6a5caf-5624-4486-b546-4994208d9921)
 An overview of the daily_activity_merged dataset
 
-[2.pdf](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/files/12841952/2.pdf)
+![2_page-0001](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/ea91d476-770b-4542-9100-bb810e4b8b6c)
 An overview of the SleepDay_merged dataset
 
-[3.pdf](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/files/12841953/3.pdf)
+![3_page-0001](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/a2d6038d-5898-410e-8752-42cad917be64)
 An overview of the weight_loginfo dataset
 
 I converted the workbooks from csv files into Google Sheets workbooks in order not to lose part data while working in csv file.
