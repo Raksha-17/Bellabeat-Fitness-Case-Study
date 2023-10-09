@@ -87,21 +87,21 @@ An overview of the sleepDay_merged after transformation
 
 All these being done, I now have my dataset in one worksheet where I continued my data transformation by ;
 
-*converting the dataset into tables
+* converting the dataset into tables
 
-*creating named ranges with the top row (column headers)
+* creating named ranges with the top row (column headers)
 
-*using the formula =UNIQUE(B2:B1000) to ascertain how many users are contained in the dataset. Here, we found out that there are 33 unique IDs as opposed to the 30 users expected.
+* using the formula =UNIQUE(B2:B1000) to ascertain how many users are contained in the dataset. Here, we found out that there are 33 unique IDs as opposed to the 30 users expected.
 
-*with this formula =UNIQUE(D2:D1000) I was able to know that only 8 users logged their weight details, which means we will be working with weightinfo for 8 people as against the 33 unique users.
+* with this formula =UNIQUE(D2:D1000) I was able to know that only 8 users logged their weight details, which means we will be working with weightinfo for 8 people as against the 33 unique users.
 
-*using formula =SUM(O2+P2+Q2+R2) to create a new column named Total_minutes.
+* using formula =SUM(O2+P2+Q2+R2) to create a new column named Total_minutes.
 
-*formatting the date columns into dd-mm-yyyy format using the date option in Text to columns too , then used the function =TEXT([C2,”dddd”) to extract the day from the date.
+* formatting the date columns into dd-mm-yyyy format using the date option in Text to columns too , then used the function =TEXT([C2,”dddd”) to extract the day from the date.
 
-*using the formula =CONVERT(H12,"mn","hr") to convert minutes TotalMinutesAsleep to TotalHoursAsleep and lastly,
+* using the formula =CONVERT(H12,"mn","hr") to convert minutes TotalMinutesAsleep to TotalHoursAsleep and lastly,
 
-*formatting the numbered columns into two(2) decimal places. Below is a view of all columns in the dataset after cleaning and transformation;
+* formatting the numbered columns into two(2) decimal places. Below is a view of all columns in the dataset after cleaning and transformation;
 
 
 
@@ -178,4 +178,20 @@ The share phase as stated above is all about sharing our findings to the primary
   
 * Users tend to spend and average of 419 mins-which is approximately 7hours- on sleep, while they spend about 458 minutes-which is approximately 8hours in bed, while spending more time in bed and getting more sleep on Sundays.
   
-*Users tend to take more steps on Saturdays and Tuesdays with least steps on Sundays and Thursdays.
+* Users tend to take more steps on Saturdays and Tuesdays with least steps on Sundays and Thursdays.
+
+Below is the visualization dashboard I created for this analysis;
+
+![dashboardd](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/9e7acad3-abff-45a5-9d8d-d821dcbd87a3)
+
+## Act
+Bellabeat wellness company is a health technology company that focuses on providing high-tech wellness/fitness product for women, but as a limitation, there was no demographic to connote that the data provided was collected from women which may result in sampling bias. It is recommended that the company focuses on primary data sources for future analysis other than collecting third party data.
+
+Other Recommendations to the stakeholders are;
+
+* Utmost priority should be given to products that allow users track their daily activity such as steps and calories burned as users are more interested this, which will in turn increase revenue.
+* Launch a campaign to create awareness to more women about the importance of health monitoring, tracking and keeping fit.
+* Provide incentives (e.g membership upgrade, bonus points, rewards/awards) to users who do not renege on the daily monitoring/tracking of activities which will encourage more sedentary/inactive users to put in the work.
+* Occasionally rollout health tips/articles which keeps users educated on how to do better.
+* Infuse high-tech features into all products which sends a notification to the user after a considerable amount of time of inactivity.
+* Lastly, ensure that that products are 99.9% effective (in terms of battery hours, flexibility, user experience) in order to avoid lapses in capturing of user’s activity, because about 61% of manual reporting was done by users who kept track of their daily weight.
