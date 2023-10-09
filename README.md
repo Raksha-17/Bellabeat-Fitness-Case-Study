@@ -128,8 +128,7 @@ I created a pivot table to illustrate the average total steps of users across al
 ![Screenshot 2023-10-09 9 12 01 AM](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/5fa3d264-1f3b-4532-b5c9-d726a19c00d0)
 Pivot table for average total steps by ID and Day.
 
-
-![Day_Wed, Day_Tue, Day_Thu, Day_Sun, Day_Sat… (2)](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/e8a1ac28-a8e2-4710-ae28-d3b63386e17b)
+![Average total Steps by day of the week per user](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/386ffa77-a2a4-4bc0-91e2-e368fde50075)
 
 
 Similarly, it can be deduced from the bar chart below that users take more steps Saturdays and Tuesday with least steps on Sundays and Thursdays.
