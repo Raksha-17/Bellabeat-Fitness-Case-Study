@@ -47,7 +47,7 @@ To test the integrity of the data; the dataset is expected to be **ROCCC** which
 
 **Reliable**- the reliability of the dataset can be contested as there are some limitations. For instance, the sample size,(personal tracker details of only 30 users was provided) which may lead to sampling bias. Similarly, the gender of the 30 users is completely unknown and it is a fact that Bellabeat as a wellness company is majorly focused on the wellness and fitness of women.
 
-**Original**- the dataset cannot be said to be original as it was provided by a third party(Amazon Mechanical Turk
+**Original**- the dataset cannot be said to be original as it was provided by a third party(Amazon Mechanical Turk).
 
 **Comprehensive**- the dataset can be said to be comprehensive enough as the whole of the 18 csv files contains adequate information about the users’ activity ranging from heartrate, sleeptime, intensities, calories burnt, weight etc.
 
@@ -75,12 +75,14 @@ An overview of the weight_loginfo dataset
 
 I converted the workbooks from csv files into Google Sheets workbooks in order not to lose part data while working in csv file.
 
+
 The date column of the Weight_Loginfo comprises of both date and time, so I used the power query to split column by the space delimiter, used the Text to columns function under the data tab to format the date into “ddmmyyyy” format and created named ranges for the column headers. I then used the TEXT function to extract the Days and Month in the date -
 
 =TEXT(D2,"ddd") , =TEXT(D2,"mmm")
 
 ![Screenshot 2023-10-09 8 41 56 AM](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/2295714f-67dc-41e0-b723-ae183d4b3ef2)
 An overview of the sleepDay_merged after transformation
+
 
 
 All these being done, I now have my dataset in one worksheet where I continued my data transformation by ;
@@ -100,6 +102,7 @@ All these being done, I now have my dataset in one worksheet where I continued m
 *using the formula =CONVERT(H12,"mn","hr") to convert minutes TotalMinutesAsleep to TotalHoursAsleep and lastly,
 
 *formatting the numbered columns into two(2) decimal places. Below is a view of all columns in the dataset after cleaning and transformation;
+
 
 
 ![Screenshot 2023-10-09 8 49 37 AM](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/43087d09-a074-498b-a26c-24c4da06e3eb)
