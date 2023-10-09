@@ -62,7 +62,7 @@ To test the integrity of the data; the dataset is expected to be **ROCCC** which
  ## Process
  The process of data cleaning, transformation and visualization will be carried out in GoogleSheets and Pivot table and Charts.
 
-Data Cleaning and Transformation
+**Data Cleaning and Transformation**
 
 ![1_page-0001](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/de6a5caf-5624-4486-b546-4994208d9921)
 An overview of the daily_activity_merged dataset
@@ -77,4 +77,24 @@ I converted the workbooks from csv files into Google Sheets workbooks in order n
 
 The date column of the Weight_Loginfo comprises of both date and time, so I used the power query to split column by the space delimiter, used the Text to columns function under the data tab to format the date into “ddmmyyyy” format and created named ranges for the column headers. I then used the TEXT function to extract the Days and Month in the date -
 
+=TEXT(D2,"ddd") , =TEXT(D2,"mmm")
 
+![Screenshot 2023-10-09 8 41 56 AM](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/2295714f-67dc-41e0-b723-ae183d4b3ef2)
+An overview of the sleepDay_merged after transformation
+
+All these being done, I now have my dataset in one worksheet where I continued my data transformation by ;
+
+*converting the dataset into tables
+*creating named ranges with the top row (column headers)
+*using the formula =UNIQUE(B2:B1000) to ascertain how many users are contained in the dataset. Here, we found out that there are 33 unique IDs as opposed to the 30 users expected.
+*with this formula =UNIQUE(D2:D1000) I was able to know that only 8 users logged their weight details, which means we will be working with weightinfo for 8 people as against the 33 unique users.
+*using formula =SUM(O2+P2+Q2+R2) to create a new column named Total_minutes
+*formatting the date columns into dd-mm-yyyy format using the date option in Text to columns too , then used the function =TEXT([C2,”dddd”) to extract the day from the date, 
+*using the formula =CONVERT(H12,"mn","hr") to convert minutes TotalMinutesAsleep to TotalHoursAsleep and lastly,
+*formatting the numbered columns into two(2) decimal places. Below is a view of all columns in the dataset after cleaning and transformation;
+
+![Screenshot 2023-10-09 8 49 37 AM](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/43087d09-a074-498b-a26c-24c4da06e3eb)
+The dataset after cleaning and transformation 1
+
+![Screenshot 2023-10-09 8 52 18 AM](https://github.com/Raksha-17/Bellabeat-Fitness-Case-Study/assets/146487383/3dd0d5a8-0fbf-41f7-83a1-6073a9d1b717)
+The dataset after cleaning and transformation 2
