@@ -116,7 +116,7 @@ It is also important to note that only 24 users have their daily sleep records l
 
 Now, I have my dataset in 20 columns and 941 rows(including headers) for my dailyActivity dataset, with 11 columns and 411 rows(including headers) for the sleepDay dataset and the WeightLoginfo consists of 13 columns and 68 rows(including headers). This marks the completion of my data cleaning and transformation process. It is time to start my analysis to derive certain insights which leads us to the analyze phase.
 
-## analyze
+## Analyze
 
 As mentioned earlier, all analysis process(using pivot tables), as well as visualization will be carried out in GoogleSheets.
 
@@ -159,7 +159,7 @@ Above is a pie chart which shows the percentage of time users spent in various a
 
 This brings us to the end of the analysis phase. Its is time to move on to the share phase where we pitch/share our insights and visuals (in an organized format) from the analysis carried out to the stakeholders.
 
-## share
+## Share
 
 The share phase as stated above is all about sharing our findings to the primary / secondary stakeholders of the business. I have been able to deduce the following from the analysis I carried out;
 
